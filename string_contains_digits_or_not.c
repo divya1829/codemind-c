@@ -4,12 +4,13 @@ int main(){
     int t;
     scanf("%d",&t);
     while(t--){
-        char str[1000];
+        char str[100];
         int flag = 0;
         scanf("%s",str);
         int x=strlen(str);
-        for(int i=0;i<x;i++) {
-            if(str[i]>='0'&& str[i]<='9' ){
+        for(int i=0;i<x;i++)
+        {
+            if(str[i] >= '0' && str[i] <= '9' ){
                 flag = 1;
                 break;
             }
@@ -17,7 +18,7 @@ int main(){
         if(flag == 1) 
         printf("Yes
 ");
-        else
+        else 
         printf("No
 ");
     }
